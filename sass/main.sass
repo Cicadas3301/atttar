@@ -15,6 +15,171 @@ body
 
 .ov-hidden
     overflow: hidden
+
+.breadcrumbs
+    display: flex
+    font-size: 17px
+    line-height: 1.1
+    margin: 40px 0
+    &_link
+        color: #A6B0C5
+        &.active
+            color: #34373D
+    &_arrow
+        margin: 0 6px
+
+.games
+    padding-bottom: 110px
+    &_top
+        display: flex
+        align-items: center
+        margin-bottom: 60px
+        &-title
+            font-size: 36px
+            font-weight: 900
+            text-transform: uppercase
+            color: #34373d
+            margin-right: auto
+        &-select
+            margin-right: 20px
+            select
+                border-radius: 10px
+                background: #fff
+                padding: 13px 25px
+                border: none
+                width: 236px
+        &-button
+            background: #EAEDF2
+            border-radius: 10px
+            padding: 13px 34px
+            font-size: 16px
+            font-weight: 700
+            color: #34373D
+    &_items
+        display: flex
+        // justify-content: space-between
+        flex-wrap: wrap
+    &_item
+        width: 48%
+        margin-right: 2%
+        margin-bottom: 40px
+        padding: 60px
+        background: #fff
+        border-radius: 20px
+        &-img
+            width: 100%
+            img
+                border-radius: 10px
+        &-name
+            margin-top: 40px
+            font-size: 32px
+            font-weight: 700
+            color: #34373d
+            margin-bottom: 10px
+        &-info
+            display: flex
+        &-infoblock + &-infoblock
+            margin-left: 8px
+        &-infoblock
+            display: flex
+            align-items: center
+            span
+                margin-left: 5px
+                display: flex
+                font-size: 16px
+                color: #34373d
+        &-desc
+            margin-top: 26px
+            font-size: 16px
+            line-height: 1.2
+        &-bottom
+            margin-top: 25px
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &-socials
+            display: flex
+            a + a
+                margin-left: 10px
+        &-button
+            font-size: 18px
+            font-weight: 700
+            color: #f3bd55
+            display: flex
+            align-items: center
+            transition: .3s
+            &:hover
+                color: #ECA41A
+                svg
+                    path
+                        stroke: #ECA41A
+            svg
+                margin-left: 5px
+                path
+                    transition: .3s
+    &_bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.pagination
+    display: flex
+    align-items: center
+    &_button
+        a
+            display: flex
+            align-items: center
+            padding: 7px 15px
+            border: 1px solid transparent
+            svg
+                display: block
+            &:hover
+                border: 1px solid #BDD3FF
+                border-radius: 2px
+    &_prev
+        margin-right: 10px
+        svg
+            margin-right: 5px
+    &_next
+        margin-left: 10px
+        svg
+            margin-left: 5px
+    &_item + &_item
+        margin-left: 9px
+    &_link
+        padding: 7px 14px
+        transition: .3s
+        border: 1px solid transparent
+        &:hover
+            border: 1px solid #BDD3FF
+            border-radius: 2px
+        &.active
+            background: #BDD3FF
+            border-radius: 2px
+            &:hover
+                border: 1px solid transparent
+
+.info
+    &_title
+        font-size: 36px
+        line-height: 1.15
+        margin-bottom: 25px
+    &_text
+        font-size: 16px
+        line-height: 1.15
+    &_subtitle
+        margin-top: 80px
+        line-height: 1.15
+        font-size: 26px
+        font-weight: 700
+        margin-bottom: 40px
+    &_item
+        &-text
+            margin-bottom: 20px
+            font-size: 16px
+        &-img
+            margin-bottom: 50px
+
 @media (max-width: 1199.90px)
     .container
         max-width: 960px
@@ -282,7 +447,6 @@ body
                 &.right
                     padding-left: 0
 
-
 @media (max-width: 767.90px)
     .container
         max-width: 530px
@@ -422,12 +586,15 @@ body
             .inner
                 width: auto
 
-
 @media (max-width: 576.90px)
     .container
         width: 100%
         padding-left: 10px
         padding-right: 10px
+
+    .breadcrumbs
+        font-size: 14px
+        margin-bottom: 20px
     .header
         &_mob
             width: 100%
@@ -525,3 +692,15 @@ body
                 margin-bottom: 30px
             &_button
                 margin-top: 25px
+
+    .info
+        &_title
+            font-size: 25px
+            margin-bottom: 15px
+        &_subtitle
+            font-size: 18px
+            margin-top: 45px
+            margin-bottom: 15px
+        &_item
+            &-text
+                font-size: 14px
