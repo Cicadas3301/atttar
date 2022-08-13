@@ -28,12 +28,18 @@ body
     &_arrow
         margin: 0 6px
 
+input, select
+    &:focus
+        outline: 0
+
 .games
     padding-bottom: 110px
     &_top
         display: flex
         align-items: center
         margin-bottom: 60px
+        &-filter, &-mob
+            display: none
         &-title
             font-size: 36px
             font-weight: 900
@@ -42,12 +48,58 @@ body
             margin-right: auto
         &-select
             margin-right: 20px
-            select
-                border-radius: 10px
-                background: #fff
-                padding: 13px 25px
+            position: relative
+        &-input
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 236px
+            border-radius: 10px
+            background: #fff
+            padding: 10px 28px
+            cursor: pointer
+            span
+                font-size: 16px
+                font-weight: 700
+                text-overflow: ellipsis
+                width: 70%
+                overflow: hidden
+                white-space: nowrap
+            svg
+                transition: .3s
+            &.active
+                border-radius: 10px 10px 0 0
+                svg
+                    transform: rotate(-180deg)
+        &-toggle
+            position: absolute
+            left: 0
+            top: 100%
+            background: #fff
+            padding-top: 10px
+            border-radius: 0 0 10px 10px
+            display: none
+            span
+                display: flex
+                border-top: 1px solid #D7DCE7
+                font-size: 16px
+                padding: 5px 28px
+                cursor: pointer
+                transition: .3s
+                &:last-child
+                    border-radius: 0 0 10px 10px
+                &:hover
+                    background: #34373D
+                    color: #fff
+        &-search
+            input
+                padding: 5px 28px
+                font-size: 16px
+                width: 100%
                 border: none
-                width: 236px
+                color: #34373D
+                &:placeholder
+                    color: #d7dce7
         &-button
             background: #EAEDF2
             border-radius: 10px
@@ -61,7 +113,8 @@ body
         flex-wrap: wrap
     &_item
         width: 48%
-        margin-right: 2%
+        margin-right: 1%
+        margin-left: 1%  
         margin-bottom: 40px
         padding: 60px
         background: #fff
@@ -180,9 +233,305 @@ body
         &-img
             margin-bottom: 50px
 
+.footer
+    padding-bottom: 90px
+    padding-top: 10px
+    &_top
+        display: flex
+        justify-content: space-between
+        padding-bottom: 60px
+        border-bottom: 1px solid #dfe1f5
+        margin-bottom: 45px
+    &_left
+        display: flex
+        flex-direction: column
+    &_logo
+        margin-bottom: 40px
+    &_socials
+        &-images
+            margin-top: 20px
+            display: flex
+            a + a
+                margin-left: 12px
+        &-send + &-send
+            margin-top: 15px
+        &-send
+            font-size: 24px
+            font-weight: 700
+            display: flex
+            transition: .3s
+            &:hover
+                color: #224A9A
+    &_center
+        margin-left: 70px
+        margin-right: 70px
+        &-item
+            font-size: 17px
+            a
+                transition: .3s
+                &:hover
+                    color: #224A9A
+        &-item + &-item
+            margin-top: 15px
+    &_right
+        display: flex
+        &-link
+            display: flex
+            font-size: 17px
+            text-transform: capitalize
+            margin-bottom: 15px
+            transition: .3s
+            &:hover
+                color: #224A9A
+        &-button
+            margin-left: 70px
+            a
+                padding: 23px 29px
+                background: #BDD3FF
+                border-radius: 10px
+                display: flex
+                transition: .3s
+                &:hover
+                    background: #224A9A
+                    color: #fff
+    &_bottom
+        display: flex
+        &-left
+            margin-right: 50px
+        &-copy
+            margin-bottom: 10px
+            font-weight: 700
+        &-desc
+            line-height: 1.4
+            font-size: 14px
+            text-transform: capitalize
+        &-right
+            display: flex
+            flex-direction: column
+        &-link
+            font-size: 14px
+            text-decoration: underline
+            margin-bottom: 15px
+            transition: .3s
+            &:hover
+                color: #1C2E52
+
+.big_learning
+    margin-bottom: 100px
+
+.calendar
+    padding-bottom: 100px
+    &_title
+        width: 100%
+        font-size: 36px
+        font-weight: 900
+        text-transform: uppercase
+        margin-bottom: 60px
+        font-family: "Intro-Black"
+        span
+            color: #2256A6
+    &_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &_menu
+        width: 315px
+        &-filter, &-mob
+            display: none
+        &-item
+            border-bottom: 1px solid #D7DCE7
+            padding-bottom: 20px
+            margin-bottom: 25px
+        &-top
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 25px
+            cursor: pointer
+            span
+                font-size: 16px
+                font-weight: 700
+        &-inputs
+            display: none
+            flex-direction: column
+            &.active
+                display: flex
+        &-choose + &-choose
+            margin-top: 15px
+        &-choose
+            cursor: pointer
+            span
+                font-size: 16px
+        &-button
+            width: 100%
+            a
+                display: flex
+                justify-content: center
+                background: #ECEEF2
+                border-radius: 10px
+                padding: 12px 0
+                width: 100%
+                text-align: center
+    &_items
+        width: calc(100% - 345px)
+        margin-left: auto
+    &_item
+        display: flex
+        width: 100%
+        padding: 20px 30px 30px 50px
+        background: #fff
+        border-radius: 10px
+        margin-bottom: 40px
+        &:last-child
+            margin-bottom: 0
+        &-bottom
+            display: flex
+            justify-content: space-between
+        &-carousel
+            display: flex
+            overflow: auto
+            .slick
+                &-prev
+                    display: none!important
+                &-next
+                    width: 24px
+                    height: 24px
+                    margin-left: 20px
+        &-flag
+            border-radius: 50px
+            padding: 8px 16px
+            white-space: nowrap
+            margin-right: 10px
+            font-size: 12px
+            // &:nth-child(3) ~ .calendar_item-flag
+                // display: none
+        &-title
+            margin-top: 15px
+            margin-bottom: 10px
+            font-size: 32px
+            font-weight: 700
+            text-transform: uppercase
+        &-desc
+            font-size: 16px
+        &-left
+            width: calc(100% - 250px)
+        &-bottom
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 60px
+        &-author
+            display: flex
+            align-items: center
+        &-info
+            margin-left: 20px
+        &-name
+            font-weight: 700
+        &-infoblocks
+            display: flex
+            align-items: center
+            margin-top: 10px
+        &-infoblock
+            display: flex
+            align-items: center
+            margin-right: 9px
+            span
+                margin-left: 5px
+                font-size: 16px
+        &-seats
+            display: flex
+            flex-direction: column
+            &-bottom
+                display: flex
+            &-counts
+                margin-right: 15px
+                font-size: 16px
+            &-status
+                font-size: 16px
+                color: #A6B0C5
+        &-counttitle
+            font-size: 16px
+            font-weight: 700
+            margin-bottom: 8px
+        &-right
+            margin-left: auto
+        &-price
+            text-align: center
+            margin: 10px 0
+            font-size: 32px
+            font-weight: 700
+            text-transform: uppercase
+        &-button
+            width: 100%
+            text-align: center
+            padding: 15px 0
+            background: #F3BD55
+            border-radius: 10px
+            color: #fff
+            display: flex
+            justify-content: center           
+    &_wrap
+        padding: 30px
+        background: #FFFFFF
+        border-radius: 10px
+        margin-bottom: 40px
+        &-arrow
+            cursor: pointer
+        &-top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 15px
+        &-date
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+        &-days
+            display: flex
+            justify-content: space-between
+            margin-bottom: 15px
+        &-day
+            font-size: 18px
+            color: #A6B0C5
+            text-transform: uppercase
+            font-weight: 600
+        &-counts
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &-count
+            width: calc(100% / 7)
+            text-align: center
+            padding: 7px 0
+            border-radius: 2px
+            border: 1px solid transparent
+            cursor: pointer
+            font-weight: 600
+            &:hover
+                background: #F6F7FF
+                border: 1px solid #BDD3FF
+            &.disable
+                color: #A6B0C5
+            &.active
+                background: #BDD3FF
+                border-radius: 2px
+                font-weight: 600
+
 @media (max-width: 1199.90px)
     .container
         max-width: 960px
+
+    .games
+        &_top
+            &-input
+                width: 190px
+
+    .footer
+        &_right
+            flex-direction: column
+            &-button
+                margin-left: 0
+                margin-top: 40px
 
     .header
         &_logo
@@ -285,7 +634,68 @@ body
 
 @media (max-width: 991.90px)
     .container
-        max-width: 760px
+        max-width: 740px
+
+    .games
+        &_item
+            padding: 0
+            &-wrapper
+                padding: 20px 30px 30px 30px
+        &_top
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            &-filter
+                display: flex
+                align-items: center
+                margin-top: 20px
+                span
+                    margin-right: 15px
+                    font-size: 14px
+            &-mob
+                position: fixed
+                top: 0
+                left: -100%
+                height: 100vh
+                width: 100vw
+                background: #F6F7FF
+                z-index: 10001
+                display: flex
+                flex-direction: column
+                padding: 60px
+                transition: .3s
+                &.active
+                    left: 0
+            &-close
+                margin-left: auto
+                margin-bottom: 10px
+            &-hide
+                order: 2
+                background: #BDD3FF
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                text-align: center
+                padding: 12px 0
+                width: 100%
+                margin-top: 10px
+            &-button
+                text-align: center
+                margin-top: auto
+            &-input
+                background: 0
+                padding: 0
+            &-select
+                margin-bottom: 25px
+                padding-bottom: 25px
+                border-bottom: 1px solid #D7DCE7
+                &:first-child
+                    border: none
+            &-toggle
+                margin-top: 15px
+                position: static
+                left: auto
+                top: auto
 
     .header
         position: relative
@@ -418,7 +828,7 @@ body
             .big_block, .small_block
                 background: #9EBCF9
             .big_block
-                width: 400px
+                width: 345px
             .small_block
                 width: 280px
 
@@ -447,9 +857,83 @@ body
                 &.right
                     padding-left: 0
 
+    .footer
+        &_center
+            margin: 0 20px
+        &_right
+            padding-right: 15px
+
+    .calendar
+        &_wrap
+            width: 315px
+            order: 0
+        &_menu
+            width: auto
+            &-mob
+                width: 100%
+                position: fixed
+                top: 0
+                left: -100%
+                height: 100vh
+                width: 100vw
+                background: #F6F7FF
+                z-index: 10001
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                padding: 60px
+                transition: .3s
+                overflow: auto
+                &.active
+                    left: 0
+            &-item
+                width: 48%
+                order: 2
+            &-filter
+                display: flex
+                align-items: center
+                svg
+                    margin-left: 15px
+            &-close
+                order: 1
+                width: calc(100% - 350px)
+                display: flex
+                justify-content: flex-end
+            &-button
+                order: 3
+                width: 46%
+                font-size: 16px
+                font-weight: 700
+            &-hide
+                order: 4
+                width: 46%
+                margin-left: auto
+                a
+                    background: #BDD3FF
+                    border-radius: 10px
+                    padding: 12px 0
+                    display: flex
+                    justify-content: center
+                    text-align: center
+                    font-size: 16px
+                    font-weight: 700
+        &_items
+            width: 100%
+            margin-top: 30px
+
 @media (max-width: 767.90px)
     .container
         max-width: 530px
+
+    .games
+        &_item
+            width: 100%
+            margin-left: 0
+            margin-right: 0
+        &_bottom
+            justify-content: center
+            .pages
+                display: none
 
     .slider
         &__item
@@ -586,6 +1070,50 @@ body
             .inner
                 width: auto
 
+    .footer
+        padding-bottom: 40px
+        &_right
+            margin-top: 25px
+            &-button
+                margin-top: 20px
+                a
+                    text-align: center
+                    justify-content: center
+        &_center
+            display: none
+        &_top
+            flex-direction: column
+        &_logo
+            display: none
+        &_bottom
+            flex-direction: column
+            &-left
+                margin-right: 0
+                margin-bottom: 40px
+
+    .calendar
+        &_item
+            padding: 20px
+            flex-wrap: wrap
+            &-left
+                width: 100%
+            &-right
+                width: 100%
+                margin-top: 15px
+                display: flex
+                flex-direction: row-reverse
+                justify-content: space-between
+                align-items: center
+            &-bottom
+                flex-direction: column
+                justify-content: flex-start
+                align-items: flex-start
+                margin-top: 20px
+            &-seats
+                margin-top: 20px
+            &-button
+                padding: 15px 18px
+
 @media (max-width: 576.90px)
     .container
         width: 100%
@@ -704,3 +1232,53 @@ body
         &_item
             &-text
                 font-size: 14px
+
+    .footer
+        padding-bottom: 30px
+        &_top
+            padding-bottom: 0
+            border: none
+            margin-bottom: 30px
+        &_socials
+            &-send
+                font-size: 22px
+        &_right
+            &-links
+                display: none
+            &-button
+                margin-top: 0
+        &_bottom
+            &-right
+                padding-top: 15px
+                border-top: 1px solid #DFE1F5
+            &-left
+                margin-bottom: 15px
+            &-desc
+                font-size: 12px
+
+    .games
+        &_top
+            &-mob
+                padding: 40px 20px
+
+    .calendar
+        padding-bottom: 50px
+        &_title
+            font-size: 25px
+            margin-bottom: 15px
+        &_item
+            margin-bottom: 10px
+            &-price
+                text-align: left
+                font-size: 22px
+            &-title
+                font-size: 22px
+            &-desc
+                font-size: 14px
+
+    .pagination
+        &_button
+            span
+                display: none
+            svg
+                margin: 0
