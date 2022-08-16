@@ -6,6 +6,10 @@
   display: none;
 }
 
+.header_location a {
+  text-decoration: underline;
+}
+
 .msk_games .wrapp {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -945,6 +949,604 @@ input:focus, select:focus {
   font-weight: 600;
 }
 
+.gamer {
+  padding-bottom: 100px;
+}
+
+.gamer_img {
+  margin-bottom: 25px;
+}
+
+.gamer_items {
+  margin-top: 100px;
+}
+
+.gamer_items-title {
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Intro-Black";
+}
+
+.gamer_items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gamer_item {
+  width: calc(100% / 3 - 20px);
+  background: #BDD3FF;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.gamer_item-info {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 30px 30px 50px 30px;
+}
+
+.gamer_item-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gamer_item-name {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.gamer_item-desc {
+  font-size: 16px;
+}
+
+.gamer_item-button {
+  margin-top: 10px;
+}
+
+.gamer_item-button a {
+  background: #F3BD55;
+  border-radius: 10px;
+  padding: 22px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #fff;
+}
+
+.gamer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gamer_top-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gamer_top-socials .footer_socials-images {
+  margin-top: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.gamer_top-title {
+  font-weight: 700;
+}
+
+.gamer_top-game {
+  margin-top: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gamer_top-text {
+  margin-top: 36px;
+}
+
+.gamer_top-text span {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.gamer_top-text span:last-child {
+  margin-bottom: 0;
+}
+
+.gamer_top-left {
+  width: calc(100% - 463px - 70px);
+}
+
+.gamer_top-right {
+  width: 463px;
+  max-width: 100%;
+}
+
+.gamer_name {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Intro-Black";
+}
+
+.gamer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gamer_social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.gamer_social-img {
+  margin-right: 5px;
+}
+
+.gamer_social-text {
+  font-size: 16px;
+}
+
+.gamer_social--game {
+  margin-top: 10px;
+}
+
+.gamer_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.gamer_images-item {
+  width: 48%;
+}
+
+.gamer_reviews {
+  margin-top: 140px;
+}
+
+.gamer_reviews-anonim {
+  width: 49%;
+}
+
+.gamer_reviews-login {
+  width: 49%;
+}
+
+.gamer_reviews-unlogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 80px;
+}
+
+.gamer_reviews-choose {
+  font-size: 16px;
+  font-weight: 700;
+  color: #A6B0C5;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.gamer_reviews-publicbutton {
+  margin-top: 15px;
+  padding-left: 80px;
+}
+
+.gamer_reviews-publicbutton a {
+  background: #BDD3FF;
+  border-radius: 10px;
+  padding: 22px 60px;
+  font-size: 14px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.gamer_reviews-publish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.gamer_reviews-sendbutton a {
+  background: #BDD3FF;
+  border-radius: 10px;
+  padding: 15px 29px;
+  font-size: 14px;
+  margin-left: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.gamer_reviews-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gamer_reviews-input + .gamer_reviews-input {
+  margin-left: 10px;
+}
+
+.gamer_reviews-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gamer_reviews-img img {
+  width: calc(100% / 7 - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.gamer_reviews-title {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Intro-Black";
+}
+
+.gamer_reviews-subtitle {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.gamer_reviews-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.gamer_reviews-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.gamer_reviews-avatar {
+  margin-right: 20px;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.gamer_reviews-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.gamer_reviews-input {
+  width: calc(100% - 80px);
+}
+
+.gamer_reviews-input input {
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #BDD3FF;
+  border-radius: 10px;
+  padding: 0 25px;
+  font-size: 14px;
+}
+
+.gamer_reviews-input input::-webkit-input-placeholder {
+  color: #A6B0C5;
+}
+
+.gamer_reviews-input input:-ms-input-placeholder {
+  color: #A6B0C5;
+}
+
+.gamer_reviews-input input::-ms-input-placeholder {
+  color: #A6B0C5;
+}
+
+.gamer_reviews-input input::placeholder {
+  color: #A6B0C5;
+}
+
+.gamer_reviews-buttons {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gamer_reviews-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.gamer_reviews-button .gamer_reviews-button {
+  margin-left: 0;
+}
+
+.gamer_reviews-button svg, .gamer_reviews-button img {
+  margin-right: 6px;
+}
+
+.gamer_reviews-button span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #B1BACC;
+}
+
+.gamer_reviews-toggle {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  min-width: 100%;
+  display: none;
+  cursor: auto;
+}
+
+.gamer_reviews-toggle.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gamer_reviews-toggle.js-reposttoggle {
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #B1BACC;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gamer_reviews-toggle.js-reposttoggle img, .gamer_reviews-toggle.js-reposttoggle a {
+  width: 15px;
+  height: 15px;
+}
+
+.gamer_reviews-toggle.js-emailtoggle {
+  width: 100%;
+}
+
+.gamer_reviews-toggle.js-emailtoggle input {
+  width: 100%;
+  height: 25px;
+  background: #FFFFFF;
+  border: 1px solid #B1BACC;
+  border-radius: 5px;
+}
+
+.gamer_reviews-items {
+  margin-top: 12px;
+  padding-top: 40px;
+  border-top: 1px solid #DFE1F5;
+}
+
+.gamer_reviews-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.gamer_reviews-item:last-child {
+  margin-bottom: 0;
+}
+
+.gamer_reviews-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.gamer_reviews-date {
+  font-size: 12px;
+  text-transform: lowercase;
+  color: #B1BACC;
+}
+
+.gamer_reviews-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gamer_reviews-text {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gamer_reviews-reply {
+  margin-top: 10px;
+  font-size: 12px;
+  text-transform: lowercase;
+  color: #B1BACC;
+}
+
+.gamer_reviews-show {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gamer_reviews-show a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #BDD3FF;
+}
+
+.gamer_reviews-show a svg {
+  margin-left: 14px;
+}
+
+.gamer_reviews-nothing {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  color: #A6B0C5;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #DFE1F5;
+}
+
+.popup {
+  display: none;
+  border-radius: 15px;
+  padding: 60px 70px 60px 70px;
+  cursor: auto !important;
+  width: 600px;
+  max-width: 100%;
+}
+
+.popup_title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.popup_input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.popup_input input {
+  width: 100%;
+  border: 1px solid #BDD3FF;
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 40px;
+}
+
+.popup_button {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.popup_button a {
+  background: #BDD3FF;
+  border-radius: 10px;
+  padding: 16px 85px;
+  font-size: 17px;
+}
+
+.popup_choose {
+  font-size: 14px;
+  text-align: center;
+}
+
+.popup_choose a {
+  text-decoration: underline;
+}
+
+.city_forget {
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.city_forget--register {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.city_forget--register a {
+  text-decoration: underline;
+}
+
 @media (max-width: 1199.9px) {
   .container {
     max-width: 960px;
@@ -1474,6 +2076,50 @@ input:focus, select:focus {
     width: 100%;
     margin-top: 30px;
   }
+  .gamer_item {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 20px;
+  }
+  .gamer_reviews {
+    margin-top: 100px;
+  }
+  .gamer_reviews-unlogin {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gamer_reviews-login {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .gamer_reviews-anonim {
+    width: 100%;
+  }
+  .gamer_top-left {
+    width: calc(100% - 260px - 40px);
+  }
+  .gamer_top-right {
+    width: 260px;
+  }
+  .gamer_top-cube img {
+    width: 70px;
+  }
+  .gamer_top-info {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .gamer_top-info--game {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gamer_top-author {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 767.9px) {
@@ -1751,6 +2397,31 @@ input:focus, select:focus {
   .calendar_item-button {
     padding: 15px 18px;
   }
+  .gamer_top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .gamer_top-left, .gamer_top-right {
+    width: 100%;
+  }
+  .gamer_top-right {
+    margin-top: 30px;
+  }
+  .gamer_top-info--game {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .gamer_item {
+    width: 100%;
+  }
+  .gamer_reviews-unlogin {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 576.9px) {
@@ -1935,5 +2606,75 @@ input:focus, select:focus {
   }
   .pagination_button svg {
     margin: 0;
+  }
+  .popup {
+    padding: 40px 30px;
+  }
+  .gamer_name {
+    font-size: 25px;
+  }
+  .gamer_social-text {
+    font-size: 14px;
+  }
+  .gamer_top-text {
+    margin-top: 20px;
+  }
+  .gamer_top-text span {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .gamer_top-cube img {
+    width: 120px;
+  }
+  .gamer_items {
+    margin-top: 40px;
+  }
+  .gamer_items-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .gamer_item-info {
+    padding: 25px;
+  }
+  .gamer_item-title {
+    font-size: 22px;
+  }
+  .gamer_item-name {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .gamer_item-desc {
+    font-size: 14px;
+  }
+  .gamer_reviews-title {
+    font-size: 25px;
+  }
+  .gamer_reviews-subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .gamer_reviews-send {
+    margin-top: 30px;
+  }
+  .gamer_reviews-publicbutton {
+    padding-left: 0;
+  }
+  .gamer_reviews-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+  .gamer_reviews-inputs .gamer_reviews-input {
+    width: 100%;
+  }
+  .gamer_reviews-input + .gamer_reviews-input {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .gamer_reviews-publish {
+    width: 100%;
   }
 }

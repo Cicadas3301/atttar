@@ -8,13 +8,17 @@ $(document).ready(function() {
 
 	});
 
+	$('a[data-fancybox=""').on('click', function () {
+		$.fancybox.close();
+	})
+
 	$('.calendar_item-carousel').slick({
 		dots: false,
 		nav: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		variableWidth: true,
-		nextArrow: '<img class="slick-arrow slick-next" src="../images/calendararrow.png">',
+		nextArrow: '<img class="slick-arrow slick-next" src="./images/calendararrow.png">',
 		responsive: [
 			{
 			  breakpoint: 767,
@@ -34,6 +38,7 @@ $(document).ready(function() {
 		$('.header_location, .header_socials, .header_button, .header_nav').appendTo('.header_mob');
 		$('.games_top-select, .games_top-button').appendTo('.games_top-mob');
 		$('.calendar_menu-item, .calendar_wrap, .calendar_menu-button').appendTo('.calendar_menu-mob')
+		$('.gamer_top-socials--inner').appendTo('.gamer_top-games')
 	}
 
 	$('.header_burger').on('click', function () {
@@ -65,6 +70,17 @@ $(document).ready(function() {
 
 	$('.calendar_menu-top').on('click', function () {
 		$(this).siblings('.calendar_menu-inputs').toggleClass('active');
+	})
+
+	$('.js-emailbutton').on('click', function () {
+		event.preventDefault();
+		$('.js-reposttoggle').removeClass('active');
+		$('.js-emailtoggle').toggleClass('active');
+	})
+	$('.js-repostbutton').on('click', function () {
+		event.preventDefault();
+		$('.js-emailtoggle').removeClass('active');
+		$('.js-reposttoggle').toggleClass('active');
 	})
 
 });
