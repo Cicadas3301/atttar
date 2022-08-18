@@ -15,7 +15,7 @@
 
 <body>
 	<div class="wrapper">
-		<div class="header">
+		<header class="header">
 			<div class="container">
 				<div class="header_menu">
 					<a href="index.html" class="header_logo"><img src="images/logo.svg" alt="логотип"></a>
@@ -66,7 +66,7 @@
 							<li><a href="calendar.html">Календарь игр</a></li>
 							<li><a href="info.html">Обучение</a></li>
 							<li><a href="games.html">Магазин</a></li>
-							<li><a href="gamer.html">Игропрактики</a></li>
+							<li><a href="games.html">Игропрактики</a></li>
 							<li><a href="index.html">Игры</a></li>
 							<li><a href="info.html">О нас</a></li>
 						</ul>
@@ -87,8 +87,8 @@
 					<a href="index.html" class="header_logo"><img src="images/logo.svg" alt="логотип"></a>
 				</div>
 			</div>
-		</div>
-		<div class="main">
+		</header>
+		<main class="main">
 			<div class="container">
 				<ul class="breadcrumbs">
 					<li class="breadcrumbs_item">
@@ -112,7 +112,7 @@
 						<div class="calendar_title">
 							Календарь событий <span>санкт-петербург</span>
 						</div>
-						<div class="calendar_menu">
+						<form class="calendar_menu">
 							<div class="calendar_wrap">
 								<div class="calendar_wrap-top">
 									<div class="calendar_wrap-arrow calendar_wrap-left">
@@ -262,104 +262,134 @@
 									</div>
 								</div>
 							</div>
-							<div class="calendar_menu-item">
-								<div class="calendar_menu-top">
-									<span>
-										Тип проведения
-									</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
-									</svg>										
+							<div class="calendar_menu-wrap">
+								<div class="calendar_menu-item">
+									<div class="calendar_menu-top">
+										<span>
+											Тип проведения
+										</span>
+										<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
+										</svg>										
+									</div>
+									<div class="calendar_menu-inputs active">
+										<label for="choose11" class="calendar_menu-choose">
+											<input type="radio" name="choose1" id="choose11">
+											<span>Любой</span>
+										</label>
+										<label for="choose12" class="calendar_menu-choose">
+											<input type="radio" name="choose1" id="choose12">
+											<span>Онлайн</span>
+										</label>
+										<label for="choose13" class="calendar_menu-choose">
+											<input type="radio" name="choose1" id="choose13">
+											<span>Оффлайн</span>
+										</label>
+									</div>
 								</div>
-								<div class="calendar_menu-inputs">
-									<label for="choose11" class="calendar_menu-choose">
-										<input type="radio" name="choose1" id="choose11">
-										<span>Любой</span>
-									</label>
-									<label for="choose12" class="calendar_menu-choose">
-										<input type="radio" name="choose1" id="choose12">
-										<span>Онлайн</span>
-									</label>
-									<label for="choose13" class="calendar_menu-choose">
-										<input type="radio" name="choose1" id="choose13">
-										<span>Оффлайн</span>
-									</label>
+								<div class="calendar_menu-item">
+									<div class="calendar_menu-top">
+										<span>
+											Тематика игры
+										</span>
+										<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
+										</svg>										
+									</div>
+									<div class="calendar_menu-inputs active">
+										<label for="choose14" class="calendar_menu-choose">
+											<input type="checkbox" name="choose2" id="choose14">
+											<span>Все игры</span>
+										</label>
+										<label for="choose15" class="calendar_menu-choose">
+											<input type="checkbox" name="choose2" id="choose15">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose16" class="calendar_menu-choose">
+											<input type="checkbox" name="choose2" id="choose16">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose23" class="calendar_menu-choose">
+											<input type="checkbox" name="choose2" id="choose23">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose24" class="calendar_menu-choose">
+											<input type="checkbox" name="choose2" id="choose24">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose25" class="calendar_menu-choose">
+											<input type="checkbox" name="choose2" id="choose25">
+											<span>Для женщин</span>
+										</label>
+									</div>
 								</div>
-							</div>
-							<div class="calendar_menu-item">
-								<div class="calendar_menu-top">
-									<span>
-										Тематика игры
-									</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
-									</svg>										
+								<div class="calendar_menu-item">
+									<div class="calendar_menu-top">
+										<span>
+											Название игры
+										</span>
+										<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
+										</svg>										
+									</div>
+									<div class="calendar_menu-inputs active">
+										<label for="choose17" class="calendar_menu-choose">
+											<input type="radio" name="choose3" id="choose17">
+											<span>Все игры</span>
+										</label>
+										<label for="choose18" class="calendar_menu-choose">
+											<input type="radio" name="choose3" id="choose18">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose19" class="calendar_menu-choose">
+											<input type="radio" name="choose3" id="choose19">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose26" class="calendar_menu-choose">
+											<input type="radio" name="choose3" id="choose26">
+											<span>Для женщин</span>
+										</label>
+									</div>
 								</div>
-								<div class="calendar_menu-inputs">
-									<label for="choose14" class="calendar_menu-choose">
-										<input type="checkbox" name="choose2" id="choose14">
-										<span>Все игры</span>
-									</label>
-									<label for="choose15" class="calendar_menu-choose">
-										<input type="checkbox" name="choose2" id="choose15">
-										<span>Для женщин</span>
-									</label>
-									<label for="choose16" class="calendar_menu-choose">
-										<input type="checkbox" name="choose2" id="choose16">
-										<span>Для женщин</span>
-									</label>
+								<div class="calendar_menu-item">
+									<div class="calendar_menu-top">
+										<span>
+											Автор игры
+										</span>
+										<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
+										</svg>										
+									</div>
+									<div class="calendar_menu-inputs active">
+										<label for="choose20" class="calendar_menu-choose">
+											<input type="checkbox" name="choose4" id="choose20">
+											<span>Все игры</span>
+										</label>
+										<label for="choose21" class="calendar_menu-choose">
+											<input type="checkbox" name="choose4" id="choose21">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose22" class="calendar_menu-choose">
+											<input type="checkbox" name="choose4" id="choose22">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose27" class="calendar_menu-choose">
+											<input type="checkbox" name="choose4" id="choose27">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose28" class="calendar_menu-choose">
+											<input type="checkbox" name="choose4" id="choose28">
+											<span>Для женщин</span>
+										</label>
+										<label for="choose29" class="calendar_menu-choose">
+											<input type="checkbox" name="choose4" id="choose29">
+											<span>Для женщин</span>
+										</label>
+									</div>
 								</div>
-							</div>
-							<div class="calendar_menu-item">
-								<div class="calendar_menu-top">
-									<span>
-										Название игры
-									</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
-									</svg>										
+								<div class="calendar_menu-button">
+									<button type="reset">Сбросить фильтры</button>
 								</div>
-								<div class="calendar_menu-inputs">
-									<label for="choose17" class="calendar_menu-choose">
-										<input type="radio" name="choose3" id="choose17">
-										<span>Все игры</span>
-									</label>
-									<label for="choose18" class="calendar_menu-choose">
-										<input type="radio" name="choose3" id="choose18">
-										<span>Для женщин</span>
-									</label>
-									<label for="choose19" class="calendar_menu-choose">
-										<input type="radio" name="choose3" id="choose19">
-										<span>Для женщин</span>
-									</label>
-								</div>
-							</div>
-							<div class="calendar_menu-item">
-								<div class="calendar_menu-top">
-									<span>
-										Автор игры
-									</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 10L8 2L1 10" stroke="#34373D" stroke-width="2"/>
-									</svg>										
-								</div>
-								<div class="calendar_menu-inputs">
-									<label for="choose20" class="calendar_menu-choose">
-										<input type="checkbox" name="choose4" id="choose20">
-										<span>Все игры</span>
-									</label>
-									<label for="choose21" class="calendar_menu-choose">
-										<input type="checkbox" name="choose4" id="choose21">
-										<span>Для женщин</span>
-									</label>
-									<label for="choose22" class="calendar_menu-choose">
-										<input type="checkbox" name="choose4" id="choose22">
-										<span>Для женщин</span>
-									</label>
-								</div>
-							</div>
-							<div class="calendar_menu-button">
-								<a href="">Сбросить фильтры</a>
 							</div>
 							<div class="calendar_menu-filter">
 								<span>Фильтры</span>
@@ -381,7 +411,7 @@
 									</a>
 								</div>
 							</div>
-						</div>
+						</form>
 						<div class="calendar_items">
 							<div class="calendar_item">
 								<div class="calendar_item-left">
@@ -907,7 +937,7 @@
 					</div>
 				</div>
 			</section>
-		</div>
+		</main>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer_top">
@@ -1049,7 +1079,7 @@
 				<input type="text" placeholder="Ник">
 			</div>
 			<div class="popup_input">
-				<input type="text" placeholder="Телефон">
+				<input type="tel" placeholder="Телефон">
 			</div>
 			<div class="popup_input">
 				<input type="email" placeholder="Email">
@@ -1105,6 +1135,7 @@
 	</div>
 
 	<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/fancybox/js/jquery.fancybox.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/common.js"></script>

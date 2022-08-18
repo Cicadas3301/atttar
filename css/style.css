@@ -419,16 +419,19 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	border: 2px solid #bdd3ff;
-	border-radius: 10px;
+	border-radius: 14px;
 }
 .msk_games .links a {
 	color: #5a5e66;
 	padding: 12px 25px;
 	font-size: 17px;
 	line-height: 23px;
+	display: flex;
+	height: 100%;
 }
 .msk_games .links a.active {
 	background: #bdd3ff;
+	border-radius: 10px;
 }
 .msk_games .wrapp {
 	display: flex;
@@ -609,13 +612,16 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	border: 2px solid #a4c2fe;
-	border-radius: 10px;
+	border-radius: 14px;
 }
 .registration .links a {
 	color: #5a5e66;
 	padding: 12px 25px;
 	font-size: 17px;
 	line-height: 23px;
+	border-radius: 10px;
+	display: flex;
+	height: 100%;
 }
 .registration .links a.active {
 	background: #a4c2fe;

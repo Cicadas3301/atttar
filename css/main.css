@@ -181,6 +181,8 @@ input:focus, select:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: calc(100% + 2%);
+  margin-left: -1%;
 }
 
 .games_item {
@@ -206,7 +208,7 @@ input:focus, select:focus {
   font-size: 32px;
   font-weight: 700;
   color: #34373d;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .games_item-info {
@@ -216,7 +218,7 @@ input:focus, select:focus {
 }
 
 .games_item-infoblock + .games_item-infoblock {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .games_item-infoblock {
@@ -238,7 +240,7 @@ input:focus, select:focus {
 }
 
 .games_item-desc {
-  margin-top: 26px;
+  margin-top: 28px;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -609,14 +611,43 @@ input:focus, select:focus {
   width: 315px;
 }
 
+.calendar_menu-wrap {
+  border-right: 1px solid #D7DCE7;
+  padding-right: 30px;
+  max-height: 1000px;
+  overflow: auto;
+}
+
+.calendar_menu-wrap::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  background-color: #D7DCE7;
+  border-radius: 8px;
+}
+
+.calendar_menu-wrap::-webkit-scrollbar-thumb {
+  background-color: #A6B0C5;
+  border-radius: 8px;
+}
+
 .calendar_menu-filter, .calendar_menu-mob {
   display: none;
 }
 
 .calendar_menu-item {
-  border-bottom: 1px solid #D7DCE7;
   padding-bottom: 20px;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.calendar_menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 30px);
+  height: 1px;
+  background: #D7DCE7;
 }
 
 .calendar_menu-top {
@@ -668,7 +699,7 @@ input:focus, select:focus {
   width: 100%;
 }
 
-.calendar_menu-button a {
+.calendar_menu-button button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,6 +711,10 @@ input:focus, select:focus {
   padding: 12px 0;
   width: 100%;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .calendar_items {
@@ -1547,6 +1582,26 @@ input:focus, select:focus {
   text-decoration: underline;
 }
 
+.registration .wrapp .inner {
+  margin-bottom: 5px;
+  width: calc(100% / 4 - 6px);
+  max-width: none;
+}
+
+.registration .wrapp .inner .img {
+  width: 100%;
+  background: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.registration .wrapp .inner .img img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
 @media (max-width: 1199.9px) {
   .container {
     max-width: 960px;
@@ -1631,7 +1686,8 @@ input:focus, select:focus {
     max-width: 245px;
   }
   .big_learning .big_block {
-    width: 440px;
+    width: 355px;
+    height: 260px;
   }
   .big_learning .small_block {
     width: 380px;
@@ -1647,13 +1703,10 @@ input:focus, select:focus {
   .registration .links {
     margin-top: 25px;
   }
-  .registration .wrapp:nth-child(2) {
-    display: none;
-  }
   .registration .wrapp .inner {
     max-width: 31%;
   }
-  .registration .wrapp .inner:nth-child(3) ~ .inner {
+  .registration .wrapp .inner:nth-child(4) ~ .inner {
     display: none;
   }
 }
@@ -1952,6 +2005,8 @@ input:focus, select:focus {
   }
   .registration .wrapp .inner {
     background-color: transparent;
+    width: calc(100% / 3 - 6px);
+    max-width: none;
   }
   .registration .wrapp .inner .img {
     width: 100%;
@@ -1964,6 +2019,9 @@ input:focus, select:focus {
     padding: 12px 20px 16px 20px;
     margin-left: 0;
     border-radius: 0 0 10px 10px;
+  }
+  .registration .wrapp .inner:nth-child(3) ~ .inner {
+    display: none;
   }
   .transform_games .wrapp::after {
     left: 0;
@@ -2019,6 +2077,9 @@ input:focus, select:focus {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .calendar_menu-item::after {
+    width: 100%;
   }
   .calendar_menu-filter {
     display: -webkit-box;
@@ -2125,6 +2186,10 @@ input:focus, select:focus {
 @media (max-width: 767.9px) {
   .container {
     max-width: 530px;
+  }
+  .games_items {
+    width: 100%;
+    margin-left: 0;
   }
   .games_item {
     width: 100%;
@@ -2303,8 +2368,14 @@ input:focus, select:focus {
   }
   .registration .wrapp .inner {
     max-width: none;
-    width: 48%;
+    width: 49%;
     margin-bottom: 10px;
+  }
+  .registration .wrapp .inner:nth-child(4) {
+    display: block !important;
+  }
+  .registration .wrapp .inner:nth-child(4) ~ .inner {
+    display: none;
   }
   .registration .feedback {
     margin-bottom: 0;
@@ -2587,6 +2658,34 @@ input:focus, select:focus {
   .calendar_title {
     font-size: 25px;
     margin-bottom: 15px;
+  }
+  .calendar_wrap {
+    margin-top: 20px;
+  }
+  .calendar_menu-close {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .calendar_menu-close svg {
+    min-width: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .calendar_menu-mob {
+    padding: 30px 30px 60px 30px;
+  }
+  .calendar_menu-item {
+    width: 100%;
+  }
+  .calendar_menu-hide {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .calendar_menu-button {
+    width: 100%;
   }
   .calendar_item {
     margin-bottom: 10px;

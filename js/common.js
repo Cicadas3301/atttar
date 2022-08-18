@@ -61,6 +61,8 @@ $(document).ready(function() {
 		var inptText = $(this).html();
 		$(this).parent().parent('.games_top-select').find('.games_top-input > span').html();
 		$(this).parent().parent('.games_top-select').find('.games_top-input > span').html(inptText);
+		$(this).parent().parent('.games_top-select').find('.games_top-input').removeClass('active');
+		$(this).parent('.games_top-toggle').slideUp();
 	});
 
 	$('.calendar_menu-filter, .calendar_menu-close').on('click', function () {
@@ -81,6 +83,23 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('.js-emailtoggle').removeClass('active');
 		$('.js-reposttoggle').toggleClass('active');
+	});
+
+	$('.msk_games .links a').on('click', function () {
+		event.preventDefault();
+		$('.msk_games .links a').removeClass('active');
+		$(this).addClass('active');
 	})
+	$('.registration .links a').on('click', function () {
+		event.preventDefault();
+		$('.registration .links a').removeClass('active');
+		$(this).addClass('active');
+	})
+
+	var telInp = $('input[type="tel"]');
+
+	telInp.each(function () {
+		$(this).mask("+79999999999");
+	});
 
 });
