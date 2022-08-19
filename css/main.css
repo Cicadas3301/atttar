@@ -1687,6 +1687,21 @@ input:focus, select:focus {
   border-radius: 10px 10px 0 0;
 }
 
+.big_slider .slick-dots button {
+  height: 14px;
+  width: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.big_slider .slick-dots li.slick-active button {
+  background: #224A9A;
+}
+
 @media (max-width: 1279.9px) {
   .big_learning .big_block {
     width: 495px;
