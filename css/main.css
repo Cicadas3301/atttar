@@ -1686,6 +1686,15 @@ input:focus, select:focus {
   border-radius: 10px 10px 0 0;
 }
 
+@media (max-width: 1279.9px) {
+  .big_learning .big_block {
+    width: 495px;
+  }
+  .big_learning .small_block {
+    width: 435px;
+  }
+}
+
 @media (max-width: 1199.9px) {
   .container {
     max-width: 960px;
@@ -1770,11 +1779,11 @@ input:focus, select:focus {
     max-width: 245px;
   }
   .big_learning .big_block {
-    width: 355px;
+    width: 390px;
     height: 260px;
   }
   .big_learning .small_block {
-    width: 380px;
+    width: 355px;
   }
   .learning_socials svg {
     width: 40px;
