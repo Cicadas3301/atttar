@@ -166,6 +166,7 @@ input:focus, select:focus {
 
 .games_top-toggle {
   position: absolute;
+  z-index: 2;
   left: 0;
   top: 100%;
   background: #fff;
