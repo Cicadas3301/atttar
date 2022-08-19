@@ -95,6 +95,7 @@ input, select
                     transform: rotate(-180deg)
         &-toggle
             position: absolute
+            z-index: 2
             left: 0
             top: 100%
             background: #fff
@@ -255,7 +256,7 @@ input, select
         margin-bottom: 25px
     &_text
         font-size: 16px
-        line-height: 1.15
+        line-height: 1.5
     &_subtitle
         margin-top: 80px
         line-height: 1.15
@@ -266,6 +267,7 @@ input, select
         &-text
             margin-bottom: 20px
             font-size: 16px
+            line-height: 1.5
         &-img
             margin-bottom: 50px
 
@@ -656,6 +658,16 @@ input, select
                 margin-bottom: 20px
                 &:last-child
                     margin-bottom: 0
+        &-buy
+            margin-top: 40px
+            a
+                padding: 22px 85px
+                background: #BDD3FF
+                border-radius: 10px
+                text-align: center
+                line-height: 1.4
+                font-weight: 600
+                display: inline-flex
         &-left
             width: calc(100% - 463px - 70px)
         &-right
@@ -932,6 +944,12 @@ input, select
                     border-radius: 10px 10px 0 0
 
 
+@media (max-width: 1279.90px)
+    .big_learning 
+        .big_block
+            width: 495px
+        .small_block
+            width: 435px
 @media (max-width: 1199.90px)
 
     .container
@@ -1026,10 +1044,10 @@ input, select
     .big
         &_learning
             .big_block
-                width: 355px
+                width: 390px
                 height: 260px
             .small_block
-                width: 380px
+                width: 355px
     
     .learning
         &_socials
@@ -1162,6 +1180,14 @@ input, select
             .input
                 margin-right: 0
                 margin-left: 12px
+            input
+                border: none
+                border-bottom: 1px solid #C7C7C8
+                border-radius: 0
+                padding: 3px 0
+                font-size: 14px
+                &::placeholder
+                    color: #C7C7C8
         &_socials
             margin-bottom: 20px
         &_button
@@ -1367,6 +1393,8 @@ input, select
             &-anonim
                 width: 100%
         &_top
+            &-buy
+                display: none
             &-left
                 width: calc(100% - 260px - 40px)
             &-right
