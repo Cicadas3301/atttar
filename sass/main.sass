@@ -8,10 +8,19 @@
 
 .msk
     &_games
+        .links
+            box-sizing: border-box
+            *
+                box-sizing: border-box
         .wrapp
             flex-wrap: wrap
             .inner
                 margin-bottom: 40px
+
+.registration .links
+    box-sizing: border-box
+    *
+        box-sizing: border-box
 
 body
     margin: 0
@@ -41,6 +50,15 @@ input, select
         display: flex
         align-items: center
         margin-bottom: 60px
+        &-mob
+            overflow: auto
+        &--transf
+            flex-wrap: wrap
+        &-selects
+            display: flex
+            justify-content: flex-end
+            width: 100%
+            margin-top: 40px
         &-filter, &-mob
             display: none
         &-title
@@ -57,6 +75,7 @@ input, select
             justify-content: space-between
             align-items: center
             width: 236px
+            height: 42px
             border-radius: 10px
             background: #fff
             padding: 10px 28px
@@ -124,6 +143,18 @@ input, select
         padding: 60px
         background: #fff
         border-radius: 20px
+        &.topleftimg
+            position: relative
+            .games_item-after
+                position: absolute
+                left: -30px
+                top: -30px
+        &.toprightimg
+            position: relative
+            .games_item-after
+                position: absolute
+                right: -30px
+                top: -30px
         &-img
             width: 100%
             img
@@ -149,7 +180,7 @@ input, select
         &-desc
             margin-top: 28px
             font-size: 16px
-            line-height: 1.2
+            line-height: 1.5
         &-bottom
             margin-top: 25px
             display: flex
@@ -413,6 +444,8 @@ input, select
         background: #fff
         border-radius: 10px
         margin-bottom: 40px
+        &-desc
+            line-height: 1.5
         &:last-child
             margin-bottom: 0
         &-bottom
@@ -584,6 +617,7 @@ input, select
             margin-bottom: 40px
         &-desc
             font-size: 16px
+            line-height: 1.5
         &-button
             margin-top: 10px 
             a
@@ -617,8 +651,9 @@ input, select
             margin-top: 36px
             span
                 font-size: 16px
+                line-height: 1.5
                 display: flex
-                margin-bottom: 40px
+                margin-bottom: 20px
                 &:last-child
                     margin-bottom: 0
         &-left
@@ -1023,10 +1058,17 @@ input, select
             padding: 0
             &-wrapper
                 padding: 20px 30px 30px 30px
+            &-after
+                display: none
         &_top
             flex-direction: column
             justify-content: flex-start
             align-items: flex-start
+            &--transf
+                justify-content: flex-start
+            &-selects
+                justify-content: flex-start
+                margin-top: 20px
             &-filter
                 display: flex
                 align-items: center
@@ -1353,6 +1395,13 @@ input, select
             width: 100%
             margin-left: 0
             margin-right: 0
+            padding: 30px
+            &-after
+                display: block
+                img
+                    width: 90px
+            &-wrapper
+                padding: 0
         &_bottom
             justify-content: center
             .pages
@@ -1703,6 +1752,18 @@ input, select
                 font-size: 12px
 
     .games
+        &_item
+            &.topleftimg
+                .games_item-after
+                    left: -10px
+                    top: -10px
+            &.toprightimg
+                .games_item-after
+                    right: -10px
+                    top: -30px
+            &-after
+                img
+                    width: 75px
         &_top
             &-mob
                 padding: 40px 20px

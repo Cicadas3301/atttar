@@ -55,6 +55,7 @@ $(document).ready(function() {
 
 	$('.games_top-close, .games_top-filter').on('click', function () {
 		$('.games_top-mob').toggleClass('active');
+		$('body').toggleClass('ov-hidden');
 	})		
 
 	$('.games_top-toggle > span').on('click', function () {
@@ -99,7 +100,7 @@ $(document).ready(function() {
 	var telInp = $('input[type="tel"]');
 
 	telInp.each(function () {
-		$(this).mask("+79999999999");
+		$(this).mask("+7(999) 999-9999");
 	});
 
 });
