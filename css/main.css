@@ -450,7 +450,7 @@ input:focus, select:focus {
 
 .info_text {
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 
 .info_subtitle {
@@ -464,6 +464,7 @@ input:focus, select:focus {
 .info_item-text {
   margin-bottom: 20px;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .info_item-img {
@@ -1186,6 +1187,22 @@ input:focus, select:focus {
 
 .gamer_top-text span:last-child {
   margin-bottom: 0;
+}
+
+.gamer_top-buy {
+  margin-top: 40px;
+}
+
+.gamer_top-buy a {
+  padding: 22px 85px;
+  background: #BDD3FF;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .gamer_top-left {
@@ -2235,6 +2252,9 @@ input:focus, select:focus {
   }
   .gamer_reviews-anonim {
     width: 100%;
+  }
+  .gamer_top-buy {
+    display: none;
   }
   .gamer_top-left {
     width: calc(100% - 260px - 40px);

@@ -624,6 +624,7 @@ img {
 	line-height: 23px;
 	border-radius: 10px;
 	display: flex;
+	white-space: nowrap;
 }
 .registration .links a.active {
 	background: #a4c2fe;
