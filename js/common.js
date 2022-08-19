@@ -5,7 +5,8 @@ $(document).ready(function() {
 	});
 	$('.big_slider .slider').slick({
 		dots: true,
-
+		slidesToShow: 1,
+		slidesToScroll: 1
 	});
 
 	$('a[data-fancybox=""').on('click', function () {
