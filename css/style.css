@@ -504,7 +504,7 @@ img {
 }
 .msk_games .links a {
 	color: #5a5e66;
-	padding: 12px 25px;
+	padding: 12px 27px;
 	font-size: 17px;
 	line-height: 23px;
 	display: -webkit-box;
@@ -736,13 +736,13 @@ img {
 	    -ms-flex-align: center;
 	        align-items: center;
 	border: 2px solid #a4c2fe;
-	border-radius: 14px;
+	border-radius: 10px;
 	height: 48px;
 }
 .registration .links a {
 	height: 48px;
 	color: #5a5e66;
-	padding: 12px 25px;
+	padding: 12px 28px;
 	font-size: 17px;
 	line-height: 23px;
 	border-radius: 10px;
