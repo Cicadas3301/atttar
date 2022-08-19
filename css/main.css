@@ -1987,6 +1987,25 @@ input:focus, select:focus {
     margin-right: 0;
     margin-left: 12px;
   }
+  .header_search input {
+    border: none;
+    border-bottom: 1px solid #C7C7C8;
+    border-radius: 0;
+    padding: 3px 0;
+    font-size: 14px;
+  }
+  .header_search input::-webkit-input-placeholder {
+    color: #C7C7C8;
+  }
+  .header_search input:-ms-input-placeholder {
+    color: #C7C7C8;
+  }
+  .header_search input::-ms-input-placeholder {
+    color: #C7C7C8;
+  }
+  .header_search input::placeholder {
+    color: #C7C7C8;
+  }
   .header_socials {
     margin-bottom: 20px;
   }
