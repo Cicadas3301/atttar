@@ -10,6 +10,16 @@
   text-decoration: underline;
 }
 
+.msk_games .links {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.msk_games .links * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .msk_games .wrapp {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -17,6 +27,16 @@
 
 .msk_games .wrapp .inner {
   margin-bottom: 40px;
+}
+
+.registration .links {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration .links * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -66,6 +86,26 @@ input:focus, select:focus {
   margin-bottom: 60px;
 }
 
+.games_top-mob {
+  overflow: auto;
+}
+
+.games_top--transf {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.games_top-selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin-top: 40px;
+}
+
 .games_top-filter, .games_top-mob {
   display: none;
 }
@@ -94,6 +134,7 @@ input:focus, select:focus {
       -ms-flex-align: center;
           align-items: center;
   width: 236px;
+  height: 42px;
   border-radius: 10px;
   background: #fff;
   padding: 10px 28px;
@@ -181,6 +222,8 @@ input:focus, select:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: calc(100% + 2%);
+  margin-left: -1%;
 }
 
 .games_item {
@@ -191,6 +234,26 @@ input:focus, select:focus {
   padding: 60px;
   background: #fff;
   border-radius: 20px;
+}
+
+.games_item.topleftimg {
+  position: relative;
+}
+
+.games_item.topleftimg .games_item-after {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+}
+
+.games_item.toprightimg {
+  position: relative;
+}
+
+.games_item.toprightimg .games_item-after {
+  position: absolute;
+  right: -30px;
+  top: -30px;
 }
 
 .games_item-img {
@@ -206,7 +269,7 @@ input:focus, select:focus {
   font-size: 32px;
   font-weight: 700;
   color: #34373d;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .games_item-info {
@@ -216,7 +279,7 @@ input:focus, select:focus {
 }
 
 .games_item-infoblock + .games_item-infoblock {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .games_item-infoblock {
@@ -238,9 +301,9 @@ input:focus, select:focus {
 }
 
 .games_item-desc {
-  margin-top: 26px;
+  margin-top: 28px;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .games_item-bottom {
@@ -609,14 +672,43 @@ input:focus, select:focus {
   width: 315px;
 }
 
+.calendar_menu-wrap {
+  border-right: 1px solid #D7DCE7;
+  padding-right: 30px;
+  max-height: 1000px;
+  overflow: auto;
+}
+
+.calendar_menu-wrap::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  background-color: #D7DCE7;
+  border-radius: 8px;
+}
+
+.calendar_menu-wrap::-webkit-scrollbar-thumb {
+  background-color: #A6B0C5;
+  border-radius: 8px;
+}
+
 .calendar_menu-filter, .calendar_menu-mob {
   display: none;
 }
 
 .calendar_menu-item {
-  border-bottom: 1px solid #D7DCE7;
   padding-bottom: 20px;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.calendar_menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 30px);
+  height: 1px;
+  background: #D7DCE7;
 }
 
 .calendar_menu-top {
@@ -668,7 +760,7 @@ input:focus, select:focus {
   width: 100%;
 }
 
-.calendar_menu-button a {
+.calendar_menu-button button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,6 +772,10 @@ input:focus, select:focus {
   padding: 12px 0;
   width: 100%;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .calendar_items {
@@ -696,6 +792,10 @@ input:focus, select:focus {
   background: #fff;
   border-radius: 10px;
   margin-bottom: 40px;
+}
+
+.calendar_item-desc {
+  line-height: 1.5;
 }
 
 .calendar_item:last-child {
@@ -1008,6 +1108,7 @@ input:focus, select:focus {
 
 .gamer_item-desc {
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .gamer_item-button {
@@ -1076,14 +1177,31 @@ input:focus, select:focus {
 
 .gamer_top-text span {
   font-size: 16px;
+  line-height: 1.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .gamer_top-text span:last-child {
   margin-bottom: 0;
+}
+
+.gamer_top-buy {
+  margin-top: 40px;
+}
+
+.gamer_top-buy a {
+  padding: 22px 85px;
+  background: #BDD3FF;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .gamer_top-left {
@@ -1547,6 +1665,26 @@ input:focus, select:focus {
   text-decoration: underline;
 }
 
+.registration .wrapp .inner {
+  margin-bottom: 5px;
+  width: calc(100% / 4 - 6px);
+  max-width: none;
+}
+
+.registration .wrapp .inner .img {
+  width: 100%;
+  background: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.registration .wrapp .inner .img img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
 @media (max-width: 1199.9px) {
   .container {
     max-width: 960px;
@@ -1631,7 +1769,8 @@ input:focus, select:focus {
     max-width: 245px;
   }
   .big_learning .big_block {
-    width: 440px;
+    width: 355px;
+    height: 260px;
   }
   .big_learning .small_block {
     width: 380px;
@@ -1647,13 +1786,10 @@ input:focus, select:focus {
   .registration .links {
     margin-top: 25px;
   }
-  .registration .wrapp:nth-child(2) {
-    display: none;
-  }
   .registration .wrapp .inner {
     max-width: 31%;
   }
-  .registration .wrapp .inner:nth-child(3) ~ .inner {
+  .registration .wrapp .inner:nth-child(4) ~ .inner {
     display: none;
   }
 }
@@ -1668,6 +1804,9 @@ input:focus, select:focus {
   .games_item-wrapper {
     padding: 20px 30px 30px 30px;
   }
+  .games_item-after {
+    display: none;
+  }
   .games_top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1679,6 +1818,17 @@ input:focus, select:focus {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .games_top--transf {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .games_top-selects {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 20px;
   }
   .games_top-filter {
     display: -webkit-box;
@@ -1952,6 +2102,8 @@ input:focus, select:focus {
   }
   .registration .wrapp .inner {
     background-color: transparent;
+    width: calc(100% / 3 - 6px);
+    max-width: none;
   }
   .registration .wrapp .inner .img {
     width: 100%;
@@ -1964,6 +2116,9 @@ input:focus, select:focus {
     padding: 12px 20px 16px 20px;
     margin-left: 0;
     border-radius: 0 0 10px 10px;
+  }
+  .registration .wrapp .inner:nth-child(3) ~ .inner {
+    display: none;
   }
   .transform_games .wrapp::after {
     left: 0;
@@ -2019,6 +2174,9 @@ input:focus, select:focus {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .calendar_menu-item::after {
+    width: 100%;
   }
   .calendar_menu-filter {
     display: -webkit-box;
@@ -2094,6 +2252,9 @@ input:focus, select:focus {
   .gamer_reviews-anonim {
     width: 100%;
   }
+  .gamer_top-buy {
+    display: none;
+  }
   .gamer_top-left {
     width: calc(100% - 260px - 40px);
   }
@@ -2126,10 +2287,24 @@ input:focus, select:focus {
   .container {
     max-width: 530px;
   }
+  .games_items {
+    width: 100%;
+    margin-left: 0;
+  }
   .games_item {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    padding: 30px;
+  }
+  .games_item-after {
+    display: block;
+  }
+  .games_item-after img {
+    width: 90px;
+  }
+  .games_item-wrapper {
+    padding: 0;
   }
   .games_bottom {
     -webkit-box-pack: center;
@@ -2303,8 +2478,14 @@ input:focus, select:focus {
   }
   .registration .wrapp .inner {
     max-width: none;
-    width: 48%;
+    width: 49%;
     margin-bottom: 10px;
+  }
+  .registration .wrapp .inner:nth-child(4) {
+    display: block !important;
+  }
+  .registration .wrapp .inner:nth-child(4) ~ .inner {
+    display: none;
   }
   .registration .feedback {
     margin-bottom: 0;
@@ -2578,6 +2759,17 @@ input:focus, select:focus {
   .footer_bottom-desc {
     font-size: 12px;
   }
+  .games_item.topleftimg .games_item-after {
+    left: -10px;
+    top: -10px;
+  }
+  .games_item.toprightimg .games_item-after {
+    right: -10px;
+    top: -30px;
+  }
+  .games_item-after img {
+    width: 75px;
+  }
   .games_top-mob {
     padding: 40px 20px;
   }
@@ -2587,6 +2779,34 @@ input:focus, select:focus {
   .calendar_title {
     font-size: 25px;
     margin-bottom: 15px;
+  }
+  .calendar_wrap {
+    margin-top: 20px;
+  }
+  .calendar_menu-close {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .calendar_menu-close svg {
+    min-width: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .calendar_menu-mob {
+    padding: 30px 30px 60px 30px;
+  }
+  .calendar_menu-item {
+    width: 100%;
+  }
+  .calendar_menu-hide {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .calendar_menu-button {
+    width: 100%;
   }
   .calendar_item {
     margin-bottom: 10px;
