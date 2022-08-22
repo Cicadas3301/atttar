@@ -116,4 +116,6 @@ $(document).ready(function() {
 		//buttonImageOnly: true,
 	});
 
+	$('.games_top-select select').select2();
+
 });

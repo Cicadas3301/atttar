@@ -80,59 +80,6 @@ input, select
         &-select
             margin-right: 20px
             position: relative
-        &-input
-            display: flex
-            justify-content: space-between
-            align-items: center
-            width: 236px
-            height: 42px
-            border-radius: 10px
-            background: #fff
-            padding: 10px 28px
-            cursor: pointer
-            span
-                font-size: 16px
-                font-weight: 700
-                text-overflow: ellipsis
-                width: 70%
-                overflow: hidden
-                white-space: nowrap
-            svg
-                transition: .3s
-            &.active
-                border-radius: 10px 10px 0 0
-                svg
-                    transform: rotate(-180deg)
-        &-toggle
-            position: absolute
-            z-index: 2
-            left: 0
-            top: 100%
-            background: #fff
-            padding-top: 10px
-            border-radius: 0 0 10px 10px
-            display: none
-            span
-                display: flex
-                border-top: 1px solid #D7DCE7
-                font-size: 16px
-                padding: 5px 28px
-                cursor: pointer
-                transition: .3s
-                &:last-child
-                    border-radius: 0 0 10px 10px
-                &:hover
-                    background: #34373D
-                    color: #fff
-        &-search
-            input
-                padding: 5px 28px
-                font-size: 16px
-                width: 100%
-                border: none
-                color: #34373D
-                &:placeholder
-                    color: #d7dce7
         &-button
             background: #EAEDF2
             border-radius: 10px
@@ -140,6 +87,11 @@ input, select
             font-size: 16px
             font-weight: 700
             color: #34373D
+            cursor: pointer
+            border: none
+            outline: none
+            &:focus
+                outline: none
     &_items
         display: flex
         // justify-content: space-between
@@ -221,6 +173,40 @@ input, select
         display: flex
         align-items: center
         justify-content: space-between
+
+.games_top-select
+    width: 216px
+
+.select2-container 
+    background: #FFFFFF
+    border-radius: 10px
+    height: 48px
+    width: 216px!important
+    z-index: 99999
+    .select2-selection--single 
+        height: 48px
+        display: flex
+        align-items: center
+        border: none
+        // .select2-selection__rendered
+        //     // height: 48px
+.select2-dropdown
+    border: none
+
+.select2-results__option
+    font-size: 16px
+    color: #34373d
+    font-weight: 400
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+    background-color: #000
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+    top: calc(50% - 13px)
+
+.select2-container .select2-selection--single .select2-selection__rendered
+    font-size: 16px
+    font-weight: 700
 
 .pagination
     display: flex
@@ -1045,6 +1031,15 @@ input, select
 
 @media (max-width: 991.90px)
 
+    .select2-container--default .select2-selection--single
+        background-color: transparent
+
+    .select2-container
+        background: transparent
+        width: 100%!important
+    .games_top-select
+        width: 100%
+
     .container
         max-width: 740px
 
@@ -1098,6 +1093,12 @@ input, select
                 padding: 12px 0
                 width: 100%
                 margin-top: 10px
+                font-weight: 700
+                font-size: 16px
+                border: none
+                outline: none
+                &:focus
+                    outline: none
             &-button
                 text-align: center
                 margin-top: auto

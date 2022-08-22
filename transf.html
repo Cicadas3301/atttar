@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/inner.css">
@@ -108,103 +110,85 @@
 			</div>
 			<section class="section games">
 				<div class="container">
-					<div class="games_top games_top--transf">
+					<form action="" class="games_top games_top--transf">
 						<div class="games_top-title">
 							трансформационные игры
 						</div>
 						<div class="games_top-selects">
 							<div class="games_top-select">
-								<div class="games_top-input">
-									<span>Сфера</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1L8 9L15 1" stroke="#34373D" stroke-width="2"/>
-									</svg>									
-								</div>
-								<div class="games_top-toggle">
-									<div class="games_top-search">
-										<input type="search" placeholder="Поиск">
-									</div>
-									<span>
+								<select name="" id="">
+									<option value="">
+										Сфера
+									</option>
+									<option value="">
 										Территория денег (10)
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Территория денег (10)
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-								</div>
+									</option>
+								</select>
 							</div>
 							<div class="games_top-select">
-								<div class="games_top-input">
-									<span>Автор</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1L8 9L15 1" stroke="#34373D" stroke-width="2"/>
-									</svg>									
-								</div>
-								<div class="games_top-toggle">
-									<div class="games_top-search">
-										<input type="text" placeholder="Поиск">
-									</div>
-									<span>
+								<select name="" id="">
+									<option value="">
+										Автор
+									</option>
+									<option value="">
 										Территория денег (10)
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Территория денег (10)
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-								</div>
+									</option>
+								</select>
 							</div>
 							<div class="games_top-select">
-								<div class="games_top-input">
-									<span>Название</span>
-									<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1 1L8 9L15 1" stroke="#34373D" stroke-width="2"/>
-									</svg>									
-								</div>
-								<div class="games_top-toggle">
-									<div class="games_top-search">
-										<input type="text" placeholder="Поиск">
-									</div>
-									<span>
+								<select name="" id="">
+									<option value="">
+										Название
+									</option>
+									<option value="">
 										Территория денег (10)
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Территория денег (10)
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-									<span>
+									</option>
+									<option value="">
 										Око судьбы
-									</span>
-								</div>
+									</option>
+								</select>
 							</div>
 							<div class="games_top-filter">
 								<span>Фильтры</span>
@@ -213,9 +197,9 @@
 									<path d="M7.24414 8.44517C6.09414 8.74614 5.21367 9.5772 4.85879 10.7002L4.78242 10.9563L2.6127 10.9698C0.501367 10.9832 0.442969 10.9877 0.32168 11.0776C0.0835937 11.2528 0.0117188 11.3965 0.0117188 11.6795C0.0117188 11.9625 0.0835937 12.1063 0.32168 12.2815C0.442969 12.3713 0.501367 12.3758 2.61719 12.3893L4.79141 12.4028L4.86328 12.6543C5.07891 13.3911 5.66289 14.1368 6.34121 14.55C6.48047 14.6309 6.76797 14.7612 6.98359 14.8375C7.32051 14.9543 7.46426 14.9768 7.93145 14.9948C8.61426 15.0217 8.95566 14.9498 9.55762 14.6534C10.3123 14.285 10.9816 13.5123 11.2287 12.7262L11.332 12.3983L16.9338 12.3893C22.5086 12.3758 22.5355 12.3758 22.6568 12.2815C22.8949 12.1063 22.9668 11.9625 22.9668 11.6795C22.9668 11.3965 22.8949 11.2528 22.6568 11.0776C22.5355 10.9832 22.5086 10.9832 16.9338 10.9698L11.332 10.9608L11.2287 10.6284C10.9816 9.84224 10.3033 9.0606 9.53965 8.69224C9.31504 8.58442 9.00059 8.46313 8.83887 8.4272C8.43008 8.32837 7.64395 8.33735 7.24414 8.44517ZM8.67266 9.87817C9.77773 10.26 10.2764 11.5223 9.7418 12.569C9.53516 12.9778 9.14883 13.3012 8.67266 13.4764C8.43906 13.5618 8.32676 13.5752 7.97637 13.5573C7.62598 13.5438 7.50918 13.5168 7.25312 13.4C6.29629 12.9508 5.88301 11.7918 6.34121 10.8485C6.56133 10.4083 6.88926 10.1073 7.38789 9.90063C7.7293 9.76138 8.2998 9.75239 8.67266 9.87817Z" fill="#2256A6"/>
 								</svg>								
 							</div>
-							<a href="" class="games_top-button">
+							<button type="reset" class="games_top-button">
 								Сбросить фильтр
-							</a>
+							</butto>
 						</div>
 						<div class="games_top-mob">
 							<div class="games_top-close">
@@ -224,11 +208,11 @@
 									<line x1="25.1025" y1="25.8096" x2="8.13194" y2="8.83905" stroke="#34373D"/>
 								</svg>									
 							</div>
-							<a href="" class="games_top-hide">
+							<button class="games_top-hide">
 								Показать
-							</a>
+							</button>
 						</div>
-					</div>
+					</form>
 					<div class="games_items">
 						<div class="games_item topleftimg">
 							<div class="games_item-after">
@@ -641,6 +625,8 @@
 	</div>
 
 	<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="libs/select2/select2.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/fancybox/js/jquery.fancybox.js"></script>
 	<script src="js/slick.min.js"></script>
