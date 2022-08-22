@@ -800,8 +800,8 @@ select:focus-visible, select:focus, span:focus-visible, span:focus {
 .calendar_menu-button {
   width: 100%;
   padding-right: 30px;
-  border-right: 3px solid #D7DCE7;
-  padding-top: 35px;
+  border-right: 1px solid #D7DCE7;
+  padding-top: 0;
 }
 
 .calendar_menu-button button {
