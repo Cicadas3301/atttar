@@ -404,16 +404,19 @@ input, select
             align-items: center
             margin-bottom: 25px
             cursor: pointer
+            transition: .3s
             span
                 font-size: 16px
                 font-weight: 700
+            &.active
+                margin-bottom: 5px
         &-inputs
             display: none
             flex-direction: column
             &.active
                 display: flex
-        &-choose + &-choose
-            margin-top: 15px
+            .custom-checkbox + .custom-checkbox
+                margin-top: 15px
         &-choose
             cursor: pointer
             span
@@ -894,6 +897,47 @@ input, select
                     height: 100%
                     object-fit: cover
                     border-radius: 10px 10px 0 0
+
+.custom
+	&-checkbox
+		input
+			position: absolute
+			opacity: 0
+			cursor: pointer
+			height: 0
+			width: 0
+		label
+			position: relative
+			padding-left: 25px
+			padding-top: 1pxpx
+			display: inline-block
+			font-size: 16px
+			margin: 0
+		input:checked ~ .checkmark:after, .submit-container input:checked ~ .checkmark:after
+			display: flex
+		.checkmark
+			position: absolute
+            display: flex
+			top: 0px
+			left: 0
+			height: 18px
+			width: 18px
+			background-color: #ffffff
+			border-radius: 2px
+			border: 1px solid #BDD3FF
+			&::after
+				display: none
+                margin: auto
+				content: ''
+				position: absolute
+				top: 3px
+				left: 2px
+				width: 13px
+				height: 10px
+				background-image: url(../images/checkmark.svg)
+				background-repeat: no-repeat
+				background-size: cover
+                background-color: #BDD3FF
 
 .big_slider .slick-dots
     button
