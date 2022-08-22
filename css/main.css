@@ -1679,6 +1679,15 @@ select:focus-visible, select:focus, span:focus-visible, span:focus {
 
 .custom-checkbox.radio .checkmark {
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .custom-checkbox.radio .checkmark::after {
@@ -1686,9 +1695,9 @@ select:focus-visible, select:focus, span:focus-visible, span:focus {
   background-color: #224A9A;
   width: 7px;
   height: 7px;
-  border-radius: 50%;
-  top: calc(50% - 3px);
-  left: calc(50% - 3px);
+  border-radius: 45%;
+  top: auto;
+  left: auto;
 }
 
 .custom-checkbox .checkmark {
