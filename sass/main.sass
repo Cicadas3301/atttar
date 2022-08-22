@@ -193,13 +193,53 @@ input, select
 .select2-dropdown
     border: none
 
+.select2-results__options
+    border-radius: 0 0 10px 10px
 .select2-results__option
     font-size: 16px
+    line-height: 1.5
     color: #34373d
     font-weight: 400
+    border-top: 1px solid #D7DCE7
+    padding-top: 5px
+    padding-bottom: 5px
+    padding-left: 12px
+    padding-right: 12px
+    &:last-child
+        border-radius: 0 0 10px 10px
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
-    background-color: #000
+.select2-container--default .select2-search--dropdown .select2-search__field
+    border: none
+    position: relative
+    display: flex
+
+.select2-search--dropdown
+    position: relative
+    padding-left: 12px
+    padding-right: 0
+    padding-bottom: 6px
+    &:focus-within
+        &::after
+            display: none
+    &::after
+        content: 'Поиск'
+        position: absolute
+        top: 4px
+        left: 12px
+        font-size: 16px
+        line-height: 1.5
+        color: #D7DCE7
+        z-index: 5
+        cursor: text
+
+select, span
+    &:focus-visible, &:focus
+        outline: none
+    
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable, .select2-container--default .select2-results__option--selected
+    background-color: #fff
+    color: #34373d
 
 .select2-container--default .select2-selection--single .select2-selection__arrow
     top: calc(50% - 13px)
@@ -423,6 +463,9 @@ input, select
                 font-size: 16px
         &-button
             width: 100%
+            padding-right: 30px
+            border-right: 3px solid #D7DCE7
+            padding-top: 35px
             button
                 display: flex
                 justify-content: center
@@ -899,44 +942,57 @@ input, select
                     border-radius: 10px 10px 0 0
 
 .custom
-	&-checkbox
-		input
-			position: absolute
-			opacity: 0
-			cursor: pointer
-			height: 0
-			width: 0
-		label
-			position: relative
-			padding-left: 25px
-			padding-top: 1pxpx
-			display: inline-block
-			font-size: 16px
-			margin: 0
-		input:checked ~ .checkmark:after, .submit-container input:checked ~ .checkmark:after
-			display: flex
-		.checkmark
-			position: absolute
+    &-checkbox
+        input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+            height: 0
+            width: 0
+        label
+            position: relative
+            padding-left: 25px
+            padding-top: 1pxpx
+            display: inline-block
+            font-size: 16px
+            margin: 0
+        input:checked ~ .checkmark
+            background: #BDD3FF
+        input:checked ~ .checkmark:after
+                display: flex
+        &.radio
+            .checkmark
+                border-radius: 50%
+                &::after
+                    background-image: none
+                    background-color: #224A9A
+                    width: 7px
+                    height: 7px
+                    border-radius: 50%
+                    top: calc(50% - 3px)
+                    left: calc(50% - 3px)
+        .checkmark
+            position: absolute
             display: flex
-			top: 0px
-			left: 0
-			height: 18px
-			width: 18px
-			background-color: #ffffff
-			border-radius: 2px
-			border: 1px solid #BDD3FF
-			&::after
-				display: none
+            top: 0px
+            left: 0
+            height: 18px
+            width: 18px
+            background-color: #ffffff
+            border-radius: 2px
+            border: 1px solid #BDD3FF
+            &::after
+                display: none
                 margin: auto
-				content: ''
-				position: absolute
-				top: 3px
-				left: 2px
-				width: 13px
-				height: 10px
-				background-image: url(../images/checkmark.svg)
-				background-repeat: no-repeat
-				background-size: cover
+                content: ''
+                position: absolute
+                top: 3px
+                left: 2px
+                width: 13px
+                height: 10px
+                background-image: url(../images/checkmark.svg)
+                background-repeat: no-repeat
+                background-size: cover
                 background-color: #BDD3FF
 
 .big_slider .slick-dots
@@ -1381,12 +1437,16 @@ input, select
                 justify-content: flex-end
             &-button
                 order: 3
-                width: 46%
+                width: 100%
                 font-size: 16px
                 font-weight: 700
+                padding-top: 0
+                border: none
+                padding-right: 0
             &-hide
                 order: 4
-                width: 46%
+                width: 100%
+                margin-top: 10px
                 margin-left: auto
                 a
                     background: #BDD3FF
@@ -1619,6 +1679,11 @@ input, select
                 margin-bottom: 40px
 
     .calendar
+        &_menu
+            &-button
+                padding-right: 0
+                border: none
+                padding-top: 10px
         &_item
             padding: 20px
             flex-wrap: wrap

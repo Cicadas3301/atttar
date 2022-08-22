@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   padding-top: 8px;
 }
@@ -336,14 +337,64 @@ input:focus, select:focus {
   border: none;
 }
 
-.select2-results__option {
-  font-size: 16px;
-  color: #34373d;
-  font-weight: 400;
+.select2-results__options {
+  border-radius: 0 0 10px 10px;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: #000;
+.select2-results__option {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #34373d;
+  font-weight: 400;
+  border-top: 1px solid #D7DCE7;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.select2-results__option:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select2-search--dropdown {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 0;
+  padding-bottom: 6px;
+}
+
+.select2-search--dropdown:focus-within::after {
+  display: none;
+}
+
+.select2-search--dropdown::after {
+  content: 'Поиск';
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #D7DCE7;
+  z-index: 5;
+  cursor: text;
+}
+
+select:focus-visible, select:focus, span:focus-visible, span:focus {
+  outline: none;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable, .select2-container--default .select2-results__option--selected {
+  background-color: #fff;
+  color: #34373d;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -748,6 +799,9 @@ input:focus, select:focus {
 
 .calendar_menu-button {
   width: 100%;
+  padding-right: 30px;
+  border-right: 3px solid #D7DCE7;
+  padding-top: 35px;
 }
 
 .calendar_menu-button button {
@@ -1613,15 +1667,35 @@ input:focus, select:focus {
   margin: 0;
 }
 
-.custom-checkbox input:checked ~ .checkmark:after, .custom-checkbox .submit-container input:checked ~ .checkmark:after {
+.custom-checkbox input:checked ~ .checkmark {
+  background: #BDD3FF;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.custom-checkbox.radio .checkmark {
+  border-radius: 50%;
+}
+
+.custom-checkbox.radio .checkmark::after {
+  background-image: none;
+  background-color: #224A9A;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: calc(50% - 3px);
+  left: calc(50% - 3px);
+}
+
 .custom-checkbox .checkmark {
   position: absolute;
-  position-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 0px;
   left: 0;
   height: 18px;
@@ -1633,7 +1707,7 @@ input:focus, select:focus {
 
 .custom-checkbox .checkmark::after {
   display: none;
-  display-margin: auto;
+  margin: auto;
   content: '';
   position: absolute;
   top: 3px;
@@ -1643,7 +1717,7 @@ input:focus, select:focus {
   background-image: url(../images/checkmark.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size-background-color: #BDD3FF;
+  background-color: #BDD3FF;
 }
 
 .big_slider .slick-dots button {
@@ -2225,15 +2299,19 @@ input:focus, select:focus {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    width: 46%;
+    width: 100%;
     font-size: 16px;
     font-weight: 700;
+    padding-top: 0;
+    border: none;
+    padding-right: 0;
   }
   .calendar_menu-hide {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
-    width: 46%;
+    width: 100%;
+    margin-top: 10px;
     margin-left: auto;
   }
   .calendar_menu-hide a {
@@ -2554,6 +2632,11 @@ input:focus, select:focus {
   .footer_bottom-left {
     margin-right: 0;
     margin-bottom: 40px;
+  }
+  .calendar_menu-button {
+    padding-right: 0;
+    border: none;
+    padding-top: 10px;
   }
   .calendar_item {
     padding: 20px;

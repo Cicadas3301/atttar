@@ -124,6 +124,8 @@ $(document).ready(function() {
 		yearSuffix: ''
 	});
 
+	$('.select2-search__field').attr('placeholder', 'Поиск');
+
 	$('.games_top-select select').select2();
 
 });
