@@ -104,4 +104,16 @@ $(document).ready(function() {
 		$(this).mask("+7(999) 999-9999");
 	});
 
+	$('#datepicker').datepicker({
+		inline: true,
+		//nextText: '&rarr;',
+		//prevText: '&larr;',
+		showOtherMonths: true,
+		//dateFormat: 'dd MM yy',
+		dayNamesMin: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
+		// showOn: "button",
+		//buttonImage: "img/calendar-blue.png",
+		//buttonImageOnly: true,
+	});
+
 });

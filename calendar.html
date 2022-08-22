@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/inner.css">
@@ -114,153 +115,7 @@
 						</div>
 						<form class="calendar_menu">
 							<div class="calendar_wrap">
-								<div class="calendar_wrap-top">
-									<div class="calendar_wrap-arrow calendar_wrap-left">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<circle cx="12" cy="12" r="11.5" stroke="#BDD3FF"/>
-											<path d="M14 16L9 12L14 8" stroke="#BDD3FF"/>
-										</svg>											
-									</div>
-									<div class="calendar_wrap-date">
-										апрель 2022
-									</div>
-									<div class="calendar_wrap-arrow calendar_wrap-right">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<circle cx="12" cy="12" r="11.5" stroke="#BDD3FF"/>
-											<path d="M10 16L15 12L10 8" stroke="#BDD3FF"/>
-										</svg>											
-									</div>
-								</div>
-								<div class="calendar_wrap-days">
-									<div class="calendar_wrap-day">
-										ПН
-									</div>
-									<div class="calendar_wrap-day">
-										ВТ
-									</div>
-									<div class="calendar_wrap-day">
-										СР
-									</div>
-									<div class="calendar_wrap-day">
-										ЧТ
-									</div>
-									<div class="calendar_wrap-day">
-										ПТ
-									</div>
-									<div class="calendar_wrap-day">
-										СБ
-									</div>
-									<div class="calendar_wrap-day">
-										ВС
-									</div>
-								</div>
-								<div class="calendar_wrap-counts">
-									<div class="calendar_wrap-count disable">
-										28
-									</div>
-									<div class="calendar_wrap-count disable">
-										29
-									</div>
-									<div class="calendar_wrap-count disable">
-										30
-									</div>
-									<div class="calendar_wrap-count disable">
-										31
-									</div>
-									<div class="calendar_wrap-count">
-										1
-									</div>
-									<div class="calendar_wrap-count">
-										2
-									</div>
-									<div class="calendar_wrap-count">
-										3
-									</div>
-									<div class="calendar_wrap-count disable">
-										4
-									</div>
-									<div class="calendar_wrap-count disable">
-										5
-									</div>
-									<div class="calendar_wrap-count disable">
-										6
-									</div>
-									<div class="calendar_wrap-count disable">
-										7
-									</div>
-									<div class="calendar_wrap-count disable">
-										8
-									</div>
-									<div class="calendar_wrap-count">
-										9
-									</div>
-									<div class="calendar_wrap-count">
-										10
-									</div>
-									<div class="calendar_wrap-count">
-										11
-									</div>
-									<div class="calendar_wrap-count">
-										12
-									</div>
-									<div class="calendar_wrap-count">
-										13
-									</div>
-									<div class="calendar_wrap-count">
-										14
-									</div>
-									<div class="calendar_wrap-count">
-										15
-									</div>
-									<div class="calendar_wrap-count">
-										16
-									</div>
-									<div class="calendar_wrap-count">
-										17
-									</div>
-									<div class="calendar_wrap-count">
-										18
-									</div>
-									<div class="calendar_wrap-count">
-										19
-									</div>
-									<div class="calendar_wrap-count">
-										20
-									</div>
-									<div class="calendar_wrap-count">
-										21
-									</div>
-									<div class="calendar_wrap-count">
-										22
-									</div>
-									<div class="calendar_wrap-count">
-										23
-									</div>
-									<div class="calendar_wrap-count active">
-										24
-									</div>
-									<div class="calendar_wrap-count">
-										25
-									</div>
-									<div class="calendar_wrap-count">
-										26
-									</div>
-									<div class="calendar_wrap-count">
-										27
-									</div>
-									<div class="calendar_wrap-count">
-										28
-									</div>
-									<div class="calendar_wrap-count">
-										29
-									</div>
-									<div class="calendar_wrap-count">
-										30
-									</div>
-									<div class="calendar_wrap-count disable">
-										1
-									</div>
-								</div>
+								<div id="datepicker"></div>
 							</div>
 							<div class="calendar_menu-wrap">
 								<div class="calendar_menu-item">
@@ -1134,7 +989,9 @@
 		</div>
 	</div>
 
-	<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/jquery-ui-1.8.18.min.js"></script> -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/fancybox/js/jquery.fancybox.js"></script>
 	<script src="js/slick.min.js"></script>
